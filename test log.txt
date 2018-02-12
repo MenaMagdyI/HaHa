@@ -1,0 +1,23 @@
+Testing started at 11:29 PM ...
+
+02/12 23:29:15: Launching All Tests
+$ adb push D:\projects\developer_nanodegree\haha\app\build\outputs\apk\free\debug\app-free-debug.apk /data/local/tmp/com.udacity.gradle.builditbigger.free
+$ adb shell pm install -t -r "/data/local/tmp/com.udacity.gradle.builditbigger.free"
+	pkg: /data/local/tmp/com.udacity.gradle.builditbigger.free
+Success
+
+
+$ adb push D:\projects\developer_nanodegree\haha\app\build\outputs\apk\androidTest\free\debug\app-free-debug-androidTest.apk /data/local/tmp/com.udacity.gradle.builditbigger.free.test
+$ adb shell pm install -t -r "/data/local/tmp/com.udacity.gradle.builditbigger.free.test"
+	pkg: /data/local/tmp/com.udacity.gradle.builditbigger.free.test
+Success
+
+
+Running tests
+
+$ adb shell am instrument -w -r   -e debug false com.udacity.gradle.builditbigger.free.test/android.support.test.runner.AndroidJUnitRunner
+Client not ready yet..
+Started running tests
+Tests ran to completion.
+
+

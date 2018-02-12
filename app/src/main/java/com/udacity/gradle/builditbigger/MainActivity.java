@@ -14,6 +14,7 @@ import mina.com.mylibrary.jokesActivity;
 
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String GENYMOTION_ROOTURL   = "http://10.0.3.2:8080/_ah/api/";
