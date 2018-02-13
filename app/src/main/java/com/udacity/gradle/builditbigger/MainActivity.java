@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         joker myjocker = new joker();
-        final String joke = myjocker.getJoke();
+        String joke = myjocker.getJoke();
         final Context context = MainActivity.this;
 
        // Toast.makeText(this, myjocker.getJoke(), Toast.LENGTH_SHORT).show();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             protected void onPostExecute(String s) {
                 Class jokesactivityclass = jokesActivity.class;
                 Intent intent = new Intent(context,jokesactivityclass);
-                intent.putExtra("joke",joke);
+                intent.putExtra("joke",s);
                 startActivity(intent);
             }
         };

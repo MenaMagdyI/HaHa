@@ -23,7 +23,7 @@ public class EndpointAsyncTask extends AsyncTask<Void, Void, String> {
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory()
                     , null)
                     .setRootUrl(MainActivity.GENYMOTION_ROOTURL)
-                    .setApplicationName("Build It Bigger")
+                    .setApplicationName("haha")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> request) throws IOException {
